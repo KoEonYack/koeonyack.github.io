@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <title>20-1 모인활 상황창</title>
@@ -14,17 +14,54 @@
         .table-head-data {
             text-align: center;
         }
+
+        .Jumbotron-head{
+            min-height: 230px;
+            min-width: 100%;
+            padding-top:  70px;
+            background-color: #00B336;
+        }
+        
+        .Jumbotron-inner-txt{
+            padding-left: 60px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .over-due{
+            font-weight: bold;
+            color: gray;
+            text-decoration:line-through;
+        }
+
+        .in-due{
+            font-weight: bold;
+            color: rgb(7, 197, 67);
+        }
+
     </style>
 </head>
 <body>
+    <div class="Jumbotron-head">
+        <div class="Jumbotron-inner-txt">
+            🎺 20-1 모인활 대시보드 (최종 업데이트: 20.03.06 19:27)
+        </div>
+    </div>
+
+
+
     <div class="container">
+        
+            
+
         <div class="row">
+            
             <br>
-            <h1>20-1 모인활 대시보드</h1>
-            <p>TA고언약입니다. Piazza가 혼잡하다는 의견이 많아서 대시보드를 만들었습니다. <br>
-                (최종 업데이트: 20.03.06)
-            </p>
+            TBA:: To Be Announced
             <br>
+            <br>
+
 
             <h2>1. 강의 진행 현황</h2>
             <table class="table table-hover">
@@ -51,33 +88,38 @@
                         <a href="https://piazza.com/class/k7222vwq8y61ni?cid=21">[3/3] 출석체크 방법과 숙제</a><br>
 
                     </td>
-                    <td>3/05 23:55</td>
+                    <td class="over-due">3/05 23:55</td>
                     <td><a href="https://piazza.com/class/k7222vwq8y61ni?cid=24">[제출] HW1 제출</a></td>
                   </tr>
                   <tr>
-                    <th scope="row" class="table-head-data">1주차 금 (3/06)</th>
+                    <th scope="row" class="table-head-data ">1주차 금 (3/06)</th>
                     <td>
                         <a href="https://youtu.be/E7WCMCk1Zl0">02CrushPython Shell</a> <br>
+                        <a href="https://www.youtube.com/watch?v=HcP_GtQSrWc">02CrushPython DataTypes</a> <br>
                         <a href="https://vimeo.com/395616874?ref=em-share">Github 이용시 주의사항</a>
                     </td>
                     <td>
-                        <a href="https://piazza.com/class/k7222vwq8y61ni?cid=73"> [3/6출첵] 01Overview.ipynb has been added ... </a>
+                        <a href="https://piazza.com/class/k7222vwq8y61ni?cid=73"> [3/6출첵] 01Overview.ipynb has been added ... </a> <br>
+                        <a href="https://piazza.com/class/k7222vwq8y61ni?cid=121"> [3/6강의와 과제] 02CrushPython DataTypes ... </a> 
                     </td>
-                    <td>3/06 23:55</td>
+                    <td>
+                        <div class="in-due">3/06 23:55</div>
+                        <div class="in-due">3/11 23:55</div>
+                    </td>
+                    
                     <td><a href="https://piazza.com/class/k7222vwq8y61ni?cid=94">[제출] HW2 제출</a></td>
                   </tr>
                   <tr>
                     <th scope="row" class="table-head-data">2주차 화 (3/10)</th>
-                    <td><a href="https://www.youtube.com/watch?v=HcP_GtQSrWc">02CrushPython DataTypes</a></td>
-                    <td>
-                        <a href="https://piazza.com/class/k7222vwq8y61ni?cid=121"> [3/6강의와 과제] 02CrushPython DataTypes ... </a> 
-                    </td>
-                    <td>3/11 23:55</td>
                     <td>TBA</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row" class="table-head-data" >2주차 금 (3/13)</th>
-                    <td>TBA(To Be Announced)</td>
+                    <td>TBA</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -178,27 +220,130 @@
             </table>
 
 
+           <br>
+            <h2>3-2. KMOOC 명강의</h2>
+            <p>응시 방법에 대해서는 추후 공지예정.</p>  
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col" class="table-head-data">KMOOC</th>
+                    <th scope="col" class="table-head-data">기한</th>
+                    <th scope="col" class="table-head-data">제출방법</th>
+                  </tr>
+                </thead>
+                <tbody class="table-head-data">
+                    <tr>
+                        <th scope="col" class="table-head-data"> KMOOC 명강의 1주차 </th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 2주차 월요일 9:30 ~ 3주차 월요일 23:55 </td> <!-- Due --> 
+                        <td scope="col" class="table-head-data"> KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 2주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 3주차 월요일 9:30 ~ 4주차 월요일 23:55 </td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 3주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 4주차 월요일 9:30 ~ 5주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 4주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 5주차 월요일 9:30 ~ 6주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data"> KMOOC 명강의 5주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 6주차 월요일 9:30 ~ 7주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data"> KMOOC 명강의 6주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 7주차 월요일 9:30 ~ 8주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 7주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 8주차 월요일 9:30 ~ 9주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 8주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 9주차 월요일 9:30 ~ 10주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 9주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 10주차 월요일 9:30 ~ 11주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 10주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 11주차 월요일 9:30 ~ 12주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 11주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 12주차 월요일 9:30 ~ 13주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 12주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 13주차 월요일 9:30 ~ 14주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 13주차</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 주차 월요일 9:30 ~  15주차 월요일 23:55</td> <!-- Due --> 
+                        <td scope="col" class="table-head-data">  KMOOC에서 시험 응시 </td> <!-- 제출방법 --> 
+                    </tr>
+
+                </tbody>
+            </table>
+
             <br>
-            <h2>4. 종료 과제</h2>
+            <h2>4. 프로젝트</h2>
+            프로젝트 수행법에 대해서는 추후 공지 예정
+            <p> - 예비 보고서 작성법 <br>
+                - 최종 보고서 작성법 <br> 
+            </p> 
+
+
+            <br>
+            <h2>5. 종료 과제 및 점수 공지 현황</h2>
             <table class="table table-hover">
                 <thead>
                   <tr>
                     <th scope="col" class="table-head-data">이름</th>
-                    <th scope="col" class="table-head-data">점수 공지</th>
+                    <th scope="col" class="table-head-data">점수 공지 링크</th>
                   </tr>
                 </thead>
                 <tbody class="table-head-data">
                     <tr>
                         <th scope="col" class="table-head-data">HW1</th> <!-- 이름 --> 
-                        <td scope="col" class="table-head-data"> - </td> <!-- 점수 공지 --> 
+                        <td scope="col" class="table-head-data"> TBA </td> <!-- 점수 공지 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 인공지능 퀴즈</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 학기말에 일괄 공지 </td> <!-- 점수 공지 --> 
+                    </tr>
+                    <tr>
+                        <th scope="col" class="table-head-data">KMOOC 명강의 퀴즈</th> <!-- 이름 --> 
+                        <td scope="col" class="table-head-data"> 학기말에 일괄 공지 </td> <!-- 점수 공지 --> 
                     </tr>
                 </tbody>
             </table>
 
+
+
+
+
+
             <br><br>
             <hr>
-            Made by. Ko Eon-yak  &nbsp; &nbsp;&nbsp;
-            <a href="https://github.com/KoEonYack"><i style="font-size:18px" class="fa">&#xf1d3;</i></a>
+            Made by. Ko Eon-yak  &nbsp; &nbsp;&nbsp;  <a href="https://github.com/KoEonYack"><i style="font-size:18px" class="fa">&#xf1d3;</i></a> <br>
+            419 Newton Hall, Handong Global University (HGU)
             <hr>
             <br>
 
