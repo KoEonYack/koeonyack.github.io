@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Common Styles */
+div[class*="pd-note-"]+div[class*="pd-note-"] {
+    margin-top: 20px;
+}
+
+/* Note Style 1 */
+.pd-note-style1 {
+    vertical-align: middle;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    display: table;
+    width: 100%;
+}
+
+.pd-note-style1 .note-icon {
+    color: #aaa;
+    width: 58px;
+    height: 58px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.pd-note-style1 .note-desc {
+    vertical-align: middle;
+    padding-left: 20px;
+    float: left;
+}
+
+.pd-note-style1 .note-desc h3 {
+    margin: 0 0 7px 0;
+    font-size: 24px;
+}
+
+.pd-note-style1.pd-note-info {
+    border-color: #008fc4;
+    background-color: #d7f4ff;
+}
+
+.pd-note-style1.pd-note-info .note-icon {
+    color: rgb(0, 93, 146);
+    padding-top: 7px;
+}
+
+
+.note-icon{
+    background-color: #37c8fd;
+    border-radius:100px;
+    float: left;
+    margin-top: 2%;
+}
