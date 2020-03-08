@@ -24,10 +24,9 @@ version: 1.0.0
 
 # About/contact
 author:
-  name: Jake Park
-  description: Jake Park
+  name: Ko Eon-yak
+  description: Ko Eon-yak
   contact:
-    # linkedin:  https://www.linkedin.com/in/
     github:    https://github.com/KoEonYack
     email:    mailto:21300035@handong.edu
 
