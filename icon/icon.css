@@ -1,0 +1,48 @@
+.isometric { 
+    color: #484848;
+    display: inline-block;
+    height: 25px;
+    font-size: 20px;
+    line-height: 20px;
+    background: #eaeef1;
+    text-decoration: none;
+    box-sizing: border-box; 
+    margin: 1em;
+}
+
+.isometric .iconback{
+    display: inline-block;
+    width: 52px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+}
+.isometric span{
+    vertical-align: middle;
+}
+.isometric .iconback .fa{
+    line-height: 46px;
+    font-size:25px;
+}
+.isometric .btnttl{
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border-bottom: solid 4px #dcdcdc;
+    vertical-align:middle;
+}
+
+.isometric .ispkt{
+    background:#fd7171;
+    border-bottom: solid 4px #ef4d4d;
+}
+.isometric:hover{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+.isometric:hover .btnttl, .isometric:hover .iconback{
+    border-bottom: none;
+}
