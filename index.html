@@ -50,7 +50,7 @@
 
         mark{
             font-weight:bold;
-            background-color:rgba(85, 212, 0, 0.2);
+            background-color: rgb(255, 251, 133) /*rgba(85, 212, 0, 0.2);*/
         }
 
         h2, h3{
@@ -72,6 +72,28 @@
             color: #fff;
         }
 
+        #py4e_div { display:none; }
+
+        .bible-alert {
+            background-color: red;
+            position: fixed;
+            float: center;
+            z-index: 100;
+
+            bottom: 10%;
+            right: 15%;
+
+            border-radius: 50px;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            
+            font-size: 17px;
+            box-shadow: 2.3px 2.3px 2.3px rgb(114, 114, 114);
+            background-color: #00B336;
+        }
+
     </style>
 </head>
 <body>
@@ -81,11 +103,15 @@
         </div>
     </div>
 
+    <a href="#homedown" id="homedown">
+        <div class="bible-alert"> 📖 </div>
+    </a>
+
 
     <div class="container">
         <div class="row">
 
-            <br>
+            
             <br>
             <br>
              * TBA:: To Be Announced
@@ -176,17 +202,15 @@
             <br>
             <h2>2. 주요 공지</h2>
             <div style="line-height: 200%;">
-              - 🐋 <a href="https://piazza.com/class/k7222vwq8y61ni?cid=238"> Piazza 활용법 has been added to class homepage under Resources</a> <br>
+              - 🐣 <a href="https://piazza.com/class/k7222vwq8y61ni?cid=238"> Piazza 활용법 has been added to class homepage under Resources</a> <br>
   <pre>
     - 🏆 배워서 남주는 최고의 Piazza 지식인을 뽑습니다~</pre>
-            - 🐳 <a href="https://piazza.com/class/k7222vwq8y61ni?cid=163"> [5분 안하심..!] KMOOC 계정을 조사하고 있습니다. </a> <br>
+            - 🐤 <a href="https://piazza.com/class/k7222vwq8y61ni?cid=163"> [5분 안하심..!] KMOOC 계정을 조사하고 있습니다. </a> <br>
 <pre>
     - TA가 KMOOC 성적을 열람할 수 있게 알려주세요
     - 지난 학기 네명의 학생이 잘못된 아이디를 알려주어서 성적 처리에 어려웠습니다... 확인 후 정확하게 알려주세요!
 </pre>
-
-
-            - 🐟 <a href="https://piazza.com/class/k7222vwq8y61ni?cid=26"> [공지] 출석 과제를 제출하는 법 </a>
+            - 🐥 <a href="https://piazza.com/class/k7222vwq8y61ni?cid=26"> [공지] 출석 과제를 제출하는 법 </a>
 <pre>
     - STEP1, STEP2에 나누어서 설명하고 있습니다.
     - 잘 숙지해주세요!
@@ -333,7 +357,13 @@
 
 
             <br><br><br><br>
-            <h2>3-3. Py4e 과제 제출 일정</h2>
+            <h2 class="over-due">3-3. [종료] Py4e 과제 제출 일정</h2>
+            <div>
+                Py4e 과제는 종료되었습니다. 이전 내용을 확인하려면 <a href="#" onclick="showFunction('py4e_div'); return false;" class="blind_view">[표 확인]</a> 클릭하세요
+            </div>
+
+        <div class="data_view" id="py4e_div">
+
             <table class="table table-hover">
                 <thead>
                   <tr>
@@ -350,7 +380,7 @@
                         <td scope="col" class="table-head-data"> 3: Variables, expressions, and statements 수강 후 <br>
                                                                 Exercise 2.3 풀고 Piazza에 업로드
                         </td> <!-- 내용 -->
-                        <td scope="col" class="table-head-data in-due">2주차 토요일(3/14) 23:55</td>     <!-- Due -->
+                        <td scope="col" class="table-head-data over-due">2주차 토요일(3/14) 23:55</td>     <!-- Due -->
                         <td scope="col" class="table-head-data"><a href="https://piazza.com/class/k7222vwq8y61ni?cid=62">[공지] py4e 제출 방법 </a></td>    <!-- 제출방법 -->
                         <td scope="col" class="table-head-data"><a href="https://piazza.com/class/k7222vwq8y61ni?cid=67">[제출] Py4e HW1 [Check]</a> </td>    <!-- 제출란 -->
                     </tr>
@@ -358,6 +388,7 @@
             </table>
             - Py4e Ch2 Exercise 과제를 끝으로 Py4e 과제는 없습니다. 자유롭게 자습하세요~ <br>
             - Py4e Ch2 Exercise 과제는 점수에 들어갑니다.
+        </div>
 
 
             <br><br><br>
@@ -427,11 +458,15 @@
             <img src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/68665094_877352309331401_1410796967009163859_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=WZz4UJmiEJsAX9Rz-Lm&oh=b3d7fd3e81d770ffd2261589cf31ab2e&oe=5E9A8C52" width="40%" style="display: block; margin: 0px auto;" />
             <center>Week3 Bible Verse</center>
             <br>
-
-
+            <center><a href="https://www.youtube.com/watch?v=RYpHStRvj8c">🎵🎵전도서 12 (부제 : 너는 기억하라) Ecclesiastes 12</a> </center>
+            
+            <center> △△ 클릭시 Youtube 링크로 연결됩니다.</center>
+            <br><br>
             <center>
                 (GOD IS GOOD ALL THE TIME) <a href="https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%81%AC%ED%8B%B0%EC%8A%A4"><><</a>
             </center>
+            <br>
+
             <hr>
             Ko Eon-yak (Covenant.) &nbsp; &nbsp;&nbsp;  <a href="https://github.com/KoEonYack"><i class="fa fa-github" style="font-size:20px; color: black;"></i></a>
 
@@ -444,6 +479,24 @@
     </div>
 
     <!-- -->
+    <script>
+        function showFunction(id_div){
+            var objDiv = document.getElementById(id_div);
+            if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
+            else{ objDiv.style.display = "block"; }
+        }
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        var scrollHeight = $(document).height();
+        $('#homedown').click(function() {
+            $('body,html').animate({
+                scrollTop: scrollHeight
+            }, 300);
+            return false;
+        })
+        });
+    </script>
 </body>
 </html>

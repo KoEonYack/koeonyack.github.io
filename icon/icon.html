@@ -2,13 +2,27 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css"  href="icon.css">
+        <style>
+            .singo_view { display:none; }
+    </style>
     </head>
     <body>
-<!--以下pocket-->
-<a href="#" class="isometric">
-    <span class="iconback ispkt"><i class="fa fa-get-pocket"></i></span><span class="btnttl">POCKET</span>
-</a>
 
+        <div>
+            원글을 보시려면 <a href="#" onclick="showFunction('py4e_div'); return false;" class="blind_view">여기를</a> 클릭하세요
+        </div>
 
+        <div class="data_view" id="py4e_div">
+            내용보기
+        </div>
+
+          
+        <script>
+            function showFunction(id_div){
+                var objDiv = document.getElementById(id_div);
+                if(objDiv.style.display=="block"){ objDiv.style.display = "none"; }
+                else{ objDiv.style.display = "block"; }
+            }
+        </script>
     </body>
 </html>
