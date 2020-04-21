@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    font-family: Avenir,'Lato',"나눔바른고딕",NanumBarunGothic,"애플 SD 산돌고딕 Neo","Apple SD Gothic Neo","나눔고딕",NanumGothic,"맑은 고딕","Malgun Gothic","돋움",dotum,AppleGothic,sans-serif;
+}
+
+.banner {
+    background-color: #cacaca;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.banner-text {
+    position: relative;
+    margin-top: 15px;
+    font-size: 26px;
+    color: #fff;
+    z-index: 1;
+    text-align: center;
+}
+
+.center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    position: relative;
+    width: 360px;
+    height: 200px;
+    transform: perspective(500px) rotate(-40deg) skew(25deg);
+    box-shadow: -90px 85px 20px rgba(0, 0, 0, .3);
+    background: #fff url('iphone.png');
+    background-size: 320px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 0.5s;
+}
+
+.box:hover{
+    transform: perspective(500px) rotate(-40deg) skew(25deg) translate(50px, -50px);
+    box-shadow: -90px 75px 20px rgba(0,0,0,.3);
+}
+
+.box:before{
+    content: '';
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(-40deg) translate(-90px, -38px);
+    background: #e8e7ec url('apple.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.box:after{
+    content: '';
+    width: 100%;
+    height: 77px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewX(-50deg) translate(45px, 76px);
+    background: #e8e7ec url('iphone-logo.png');
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
