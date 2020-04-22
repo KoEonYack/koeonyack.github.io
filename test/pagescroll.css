@@ -1,0 +1,22 @@
+ body
+ {
+     margin: 0;
+     padding: 0;
+ }
+
+ #progress
+{
+    height: 15px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+p {
+    margin: 0;
+    padding: 100px;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    color: #000;
+}
