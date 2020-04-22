@@ -1,0 +1,104 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://lh3.googleusercontent.com/proxy/wDIZph3Q_x5NRcpl5bEfz6p3e4n0lkU7vnvlRTOxyIL67w-I98D9wfPaNZR2MgboAif1LAp2b3c3JmrdrslOh531GchAic5E-pp7xRJcDRVBd_Mh8gZDGuCU57ISwqQTsikOA3g');
+    background-size: cover;
+}
+
+section div
+{
+    max-width: 800px;
+    font-family: consolas;
+}
+
+secton div h2
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 4em;
+}
+
+section div p
+{
+    color: #fff;
+    font-size: 1.2em;
+    opacity: 0,5;
+}
+
+
+.scrolldown
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-80px) translateY(-50%)
+            rotate(45deg);
+}
+
+.scrolldown span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scrolldown span:nth-child(1)
+{
+    transform: translate(-15px, -15px);
+    animation-delay: -0.4s;
+}
+
+.scrolldown span:nth-child(2)
+{
+    transform: translate(0, 0);
+    animation-delay: -0.2s;
+}
+
+.scrolldown span:nth-child(3)
+{
+    transform: translate(15px, 15px);
+    animation-delay: 0s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%
+    {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    50%, 100%
+    {
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
